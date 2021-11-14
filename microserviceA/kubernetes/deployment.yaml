@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: microservicea
-        image: rafabene/microservicea
+        image: kaleelcsa/microservice1
         imagePullPolicy: IfNotPresent
         env:
             - name: TRACING_SERVICE
