@@ -1,8 +1,8 @@
 #!/bin/bash
-eval $(minikube -p demo docker-env)
-(cd microserviceA; mvn clean package; docker build -t rafabene/microservicea -f src/main/docker/Dockerfile.helidon .)
-(cd microserviceB; mvn clean package; docker build -t rafabene/microserviceb .)
-(cd microserviceC; npm install; docker build -t rafabene/microservicec .)
+#eval $(minikube -p demo docker-env)
+#(cd microserviceA; mvn clean package; docker build -t rafabene/microservicea -f src/main/docker/Dockerfile.helidon .)
+#(cd microserviceB; mvn clean package; docker build -t rafabene/microserviceb .)
+#(cd microserviceC; npm install; docker build -t rafabene/microservicec .)
 kubectl create namespace tracing || echo
 kubectl create namespace db || echo
 kubectl label namespace tracing istio-injection=enabled  --overwrite
