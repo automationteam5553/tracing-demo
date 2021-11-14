@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: microservicec
-        image: rafabene/microservicec
+        image: kaleelcsa/microservice3
         imagePullPolicy: IfNotPresent
         env:
             - name: JAEGER_SERVICE_NAME
